@@ -17,7 +17,7 @@
  * under the License.
  */
 
-package org.wso2.carbon.hashing.pbkdf2.internal;
+package org.wso2.carbon.hash.calculator.pbkdf2.internal;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -27,14 +27,14 @@ import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Deactivate;
 
-import org.wso2.carbon.hashing.pbkdf2.PBKDF2HashCalculator;
-import org.wso2.carbon.user.core.hashing.HashCalculator;
+import org.wso2.carbon.hash.calculator.pbkdf2.PBKDF2HashCalculator;
+import org.wso2.carbon.user.core.hash.HashCalculator;
 
 /**
  * This class contains the PBKDF2 hashing service component.
  */
 @Component(
-        name = "org.wso2.carbon.core.pbkdf2",
+        name = "org.wso2.carbon.core.pbkdf2.component",
         immediate = true
 )
 public class PBKDF2HashServiceComponent {
